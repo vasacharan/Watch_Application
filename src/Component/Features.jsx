@@ -7,29 +7,37 @@ export default function Features() {
   const watchPrice = 399;
   return (
     <div>
-        <div class="d-flex text-center">
-        
-            <div class="col-4 p-5">
+        <div class="container text-center">
+          <div className='row'>
+            <div class="col p-5">
+              <div className='card border-0'>
               <i class="fa-solid fa-truck-fast fs-1 text-primary"></i>
               <h5 className='fw-bolder'>Two-hour Delivery</h5>
               <p className='fw-normal fs-6'>Available in most metros on selected in-stock products</p>
               <p className='text-capitaize fw-bolder text-primary'><a>LEARN MORE</a></p>
             </div>
+            </div>
 
-            <div class="col-4 p-5">
+            
+            <div class="col p-5">
+            <div className='card border-0'>
               <i class="fa-regular fa-message fs-1 text-primary"></i>
               <h5 className='fw-bolder'>Get help Buying</h5>
               <p className='fw-normal fs-6'>Have a Question? Call a Specialist or chat online for help </p>
               <p className='text-capitaize fw-bolder text-primary'><a>CONTACT US</a></p>
             </div>
+            </div>
 
-            <div class="col-4 p-5">
+           
+            <div class="col p-5">
+             <div className='card border-0'>
               <i class="fa-solid fa-percent fs-1 text-primary"></i>
               <h5 className='fw-bolder'>Find the card for you</h5>
               <p className='fw-normal fs-6'>Get 3% Daily Cash with special financing offers from us</p>
               <p className='text-capitaize fw-bolder text-primary'><a>LEARN MORE</a></p>
             </div>
-      
+          </div>
+          </div>
         </div>
 
         <div className='container text-center'>

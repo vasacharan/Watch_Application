@@ -1,0 +1,14 @@
+{
+  "user": [
+    {
+      "id": "adminuser",
+      "password": "admin",
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "phone": "7894561236",
+      "country": "India",
+      "address": "Bangalore",
+      "gender": "male"
+    }
+  ]
+} 

@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import brand from '../Assets/brand.jpg';
 import '../styles/navbar.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 export default function Navbar() {
+  const loginnavigate = useNavigate();
+
+  useEffect(()=>{
+   let urname = sessionStorage.getItem('urname');
+   if(urname === null || urname === ""){
+     loginnavigate('/Signin')
+   }
+  },[])
   const number = 36;
 
   return (
@@ -21,20 +30,22 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
               </button>
       
-            <div className="dropdown ms-3">
-              <a className="btn btn-light dropdown-toggle all-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div className="dropdown ms-3 all-bdr">
+              <a className="btn btn-light dropdown-toggle all-bdr" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 All   
               </a>
 
               <ul className="dropdown-menu ps-2">
+               <li><Link to='/' className="dropdown-item">Home</Link></li>
+               <li><a className="dropdown-item" href="#">All Products</a></li>
                 <li><a className="dropdown-item" href="#">Watches</a></li>
                 <li><a className="dropdown-item" href="#">New Arrivals</a></li>
-                <li><a className="dropdown-item" href="#">Products</a></li>
+                <li><Link to='/Signin' className="dropdown-item">Logout</Link></li>
               </ul>
 
             </div>
               <form className="d-flex w-75" role="search">
-                <input type="text" className="form-control all-btn1" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2" />
+                <input type="text" className="form-control all-btn1" placeholder="Search...." aria-label="Recipient's username" aria-describedby="button-addon2" />
                 <button className="btn btn-primary" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass" /></button>
               </form>
 
@@ -43,20 +54,7 @@ export default function Navbar() {
             </div>
                       {/* Names on Nav bar*/}
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 " data-bs-toggle="collapse">
-                <li class="nav-item" data-bs-toggle="collapse">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                
-                <li className='' data-bs-toggle="collapse"><a class="nav-link" href="#">New Arrivals</a></li>
-                <li className='' data-bs-toggle="collapse"><a class="nav-link" href="#">Products</a></li>
-              </ul>
-              
-            </div>
+           
         </div>
       </nav>
      
@@ -65,5 +63,16 @@ export default function Navbar() {
   )
 }
 
- 
+// <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+// <ul class="navbar-nav me-auto mb-2 mb-lg-0 " data-bs-toggle="collapse">
+  
+//   <li class="nav-item" data-bs-toggle="collapse">
+//     <a class="nav-link" href="#">About</a>
+//   </li>
+  
+//   <li className='' data-bs-toggle="collapse"><a class="nav-link" href="#">New Arrivals</a></li>
+//   <li className='' data-bs-toggle="collapse"><a class="nav-link" href="#">Products</a></li>
+// </ul>
+
+// </div>
 

@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import vrsetimg from '../Assets/product-3.jpg';
-// import VRmultiselect from './VRmultiselect';
 import t1 from '../Assets/thunb-1.jpg';
 import t2 from '../Assets/thunb-2.jpg';
 import t3 from '../Assets/thunb-3.jpg';
@@ -16,7 +15,6 @@ export default function VRset() {
 
 const [selectImg, setSelectImg] = useState(vrsetimg);
 const [count, setCount] = useState(1);
-// const [disabled, setDisabled] = useState(false);
 
 const handleImg = (e) =>{
   var expandImg = document.getElementById('expandedImg');
@@ -28,16 +26,24 @@ const colours = {
   img3_col3 : 'Brown'
 }
 
-let disabled = false;
-const handleCount = (e)=>{
-console.log(e);
-  if(count.length == 0){
-    disabled = true;
-   
+{/*  qty Increment and Decrement  */}
+
+const handleCountIncrease = ()=>{
+
+  if(count > 1){
+    setCount(prevsCount=> prevsCount-1)
   }
+    
 }
-console.log(count);
-// const sel_col = document.getElementById('sel-img1');
+    const handleCountDecrease = ()=>{
+    
+    if(count < 6){
+      setCount(prevsCount=> prevsCount+1)
+    }
+        
+  }
+
+
 const img_hovr = document.getElementById('hov-img');
 
 const addEventList =()=>{
@@ -103,7 +109,7 @@ return (
                                   <option value="4">64 GB</option>
                                 </select>
                             </div>
-                            <div class="p-2 d-flex flex-row"><button type='button' value={disabled} onChange={handleCount} className='btn btn border border-1' id='qty_btn' onClick={()=>{setCount(count-1)}} disabled={disabled} >-</button><button className='btn btn border border-1'>{count}</button><button className='btn btn border border-1' onClick={()=>{setCount(count+1)}}>+</button></div>
+                            <div class="p-2 d-flex flex-row"><button type='button' className='btn btn border border-1' id='qty_btn' onClick={handleCountIncrease} >-</button><button className='btn btn border border-1'>{count}</button><button className='btn btn border border-1' onClick={handleCountDecrease}>+</button></div>
                       </div>
               
                       {/*  Shopping country code start */}

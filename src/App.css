@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -27,7 +27,14 @@
 .App-link {
   color: #61dafb;
 }
-
+.errmsg{
+  color: red;
+}
+.sign-in-box{
+  /* height: auto; */
+  background-color: rgb(16, 101, 175);
+  /* background-image: linear-gradient(rgba(255, 0, 0, 0.397),rgba(255, 255, 0, 0.548),rgba(255, 166, 0, 0.589)); */
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

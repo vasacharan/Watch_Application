@@ -28,8 +28,10 @@ function Footer() {
             </div>
         </div>
         {/* Followus and Payment pic details*/}
-        <div className='container mt-5 bg-light'>
-        <div className='row gap-2'>
+        
+        <div className='container mt-4 bg-light'>
+        <hr />
+        <div className='row gap-2 mt-4'>
             <div className='col-lg'>
                 <div className='card border border-0 bg-light'>
                     <h6>Follow Us:
@@ -42,12 +44,13 @@ function Footer() {
                     </h6>
                 </div>
             </div>
-
+            
             <div className='col-lg bg-light'>
             <h6>We Accept:
                 <img src={payment} placeholder='payment image'/>
             </h6>
         </div>
+        <hr />
         </div>
     </div>
     {/* Categories List */}

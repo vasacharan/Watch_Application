@@ -8,8 +8,8 @@
 .toggler{
     border: none !important;
 }
-.all-btn{
-    border: 1px solid rgb(88, 88, 88,0.4);
+.all-bdr{
+    border: 1px solid rgb(88, 88, 88,0.2);
     border-radius: 3px 0px 0px 3px !important;
     border-right: none !important;
 }
@@ -154,3 +154,7 @@ img.vrset-hover:hover{
     border-radius: 50%;
     background-color:blue;
 }
+.sign-in-box{
+    background-color: rgba(99, 159, 211, 0.133);
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.150),rgba(255, 255, 0, 0.150),rgba(0, 0, 255, 0.150));
+  }

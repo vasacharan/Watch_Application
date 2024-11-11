@@ -14,7 +14,6 @@ import Watches from '../Component/Watches';
 
 export const Home=()=> {
 
-
   return (
     <div>
      

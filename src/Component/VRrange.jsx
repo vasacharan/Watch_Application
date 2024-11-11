@@ -2,6 +2,7 @@ import React from 'react';
 import vrimg from '../Assets/product-22.jpg';
 
 export default function VRrange() {
+
     const vr_glass = [
         {   
             vr_name : 'Oculus Quest',
@@ -22,6 +23,7 @@ export default function VRrange() {
     ];
   
   return (
+    
     <div>
         <div class="vr-box-vr">
                 {
@@ -45,5 +47,6 @@ export default function VRrange() {
                 }
         </div>
     </div>
+   
   )
 }

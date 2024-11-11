@@ -88,7 +88,7 @@ export const Signin = () => {
                 </div>    
                 </div>
                 <div className='card-footer sign-in-box'>
-                <button type='submit' className='btn btn-primary'>Signin</button>
+                <button type='submit' className='btn btn-primary' onSubmit={handleSignin}>Signin</button>
                 <p >For New User<Link to='/Register' className='btn btn-info'>Register</Link>click here</p>
                 </div>
             

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import brand from '../Assets/brand.jpg';
+import React from 'react';
+import brand from '../Assets/charan_logo.png';
 import '../styles/navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -7,12 +7,6 @@ import { Link, useNavigate } from 'react-router-dom';
 export default function Navbar() {
   const loginnavigate = useNavigate();
 
-  useEffect(()=>{
-   let urname = sessionStorage.getItem('urname');
-   if(urname === null || urname === ""){
-     loginnavigate('/Signin')
-   }
-  },[])
   const number = 36;
 
   return (
@@ -62,17 +56,3 @@ export default function Navbar() {
 
   )
 }
-
-// <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-// <ul class="navbar-nav me-auto mb-2 mb-lg-0 " data-bs-toggle="collapse">
-  
-//   <li class="nav-item" data-bs-toggle="collapse">
-//     <a class="nav-link" href="#">About</a>
-//   </li>
-  
-//   <li className='' data-bs-toggle="collapse"><a class="nav-link" href="#">New Arrivals</a></li>
-//   <li className='' data-bs-toggle="collapse"><a class="nav-link" href="#">Products</a></li>
-// </ul>
-
-// </div>
-

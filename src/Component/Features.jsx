@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import w1 from '../Assets/product-1.jpg';
 
-
+export const userData = createContext();
 
 export default function Features() {
+ 
+
   const watchPrice = 399;
+  const [cart, setCart] = useState([]);
+
+  const watchs = [
+    {
+      watch_id : 1,
+      watch_name : 'Metro 38',
+      watch_price : 399,
+      watch_img : 'image'
+    }
+   
+];
+
+const handleAddToCart=(item)=>{
+  const addtocart = [...cart]
+  addtocart.push(item);
+  
+  setCart(addtocart)
+}
+console.log(cart);
   return (
     <div>
         <div class="container text-center">
@@ -45,7 +66,11 @@ export default function Features() {
             <div className='col-lg bg-light'>
               <figure className='position-relative'><img src={w1} alt='wth_pricing' style={{width:'80%'}} height={'auto'} />
                 <figcaption className='position-absolute watch-box p-3'><h5 className='fw-bold text-white'>Metro 38 date</h5><p className='text-white fw-lighter'>Reference 1102</p>
-                <button className='bg-danger fw-bold text-white'><i class="fa-solid fa-cart-shopping"></i> $ {watchPrice}</button>
+                {
+                  watchs.map((item,index)=> { return(
+                
+                <button className='bg-danger fw-bold text-white' onClick={()=>{handleAddToCart(item)}}><i class="fa-solid fa-cart-shopping"></i> $ {item.watch_price}</button>
+                )} )}
                 </figcaption>
               </figure>
             </div>
@@ -60,6 +85,7 @@ export default function Features() {
           </div>
         </div>
 
+       
     </div>
   )
 }

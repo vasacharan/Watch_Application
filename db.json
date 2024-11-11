@@ -9,6 +9,36 @@
       "country": "India",
       "address": "Bangalore",
       "gender": "male"
+    },
+    {
+      "id": "charanpratap",
+      "password": "12345",
+      "fullname": "vasacharan",
+      "email": "123@gmail.com",
+      "phone": "878946123",
+      "country": "India",
+      "address": "",
+      "gender": "male"
+    },
+    {
+      "id": "nagajyothi",
+      "password": "54321",
+      "fullname": "jyothi",
+      "email": "naga@gmail.com",
+      "phone": "7894561235",
+      "country": "India",
+      "address": "",
+      "gender": "female"
+    },
+    {
+      "id": "charan",
+      "password": "123456",
+      "fullname": "charanpratap",
+      "email": "abc@gmail.com",
+      "phone": "7897897891",
+      "country": "India",
+      "address": "",
+      "gender": "male"
     }
   ]
-} 
+}

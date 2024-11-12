@@ -41,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "publishConfig": {
+  "registry": "https://github.com/vasacharan/Watch_Application"
   }
 }

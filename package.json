@@ -1,5 +1,5 @@
 {
-  "name": "watchs_app",
+  "name": "watch-application",
   "homepage": "https://vasacharan.github.io/watch-application",
   "version": "0.1.0",
   "private": false,
@@ -44,6 +44,6 @@
     ]
   },
   "publishConfig": {
-  "registry": "https://github.com/vasacharan/Watch_Application"
+  "registry": "https://github.com/vasacharan/watch_application"
   }
 }

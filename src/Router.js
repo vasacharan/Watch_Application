@@ -9,7 +9,7 @@ function Router() {
   return (
     <div>
       <ToastContainer theme="colored"></ToastContainer>
-      <BrowserRouter basename="/watchs.app">
+      <BrowserRouter basename="/watch-application">
         <Routes>
           <Route exact path="/" element={<Home />} />
       

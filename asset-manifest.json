@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/watch-application/static/css/main.bfc1705f.css",
+    "main.js": "/watch-application/static/js/main.b9013fd4.js",
+    "static/js/787.684e2bf3.chunk.js": "/watch-application/static/js/787.684e2bf3.chunk.js",
+    "static/media/banner-3.jpg": "/watch-application/static/media/banner-3.293e43a26f5ba068d7c9.jpg",
+    "static/media/content-4.jpg": "/watch-application/static/media/content-4.25066b82f54302b152c0.jpg",
+    "static/media/banner-2.jpg": "/watch-application/static/media/banner-2.48cf0e35ccda497ed230.jpg",
+    "static/media/banner-1.jpg": "/watch-application/static/media/banner-1.d5ce146af42381895a0d.jpg",
+    "static/media/product-1.jpg": "/watch-application/static/media/product-1.cfeec28c97a800fe1773.jpg",
+    "static/media/content-2.jpg": "/watch-application/static/media/content-2.3a8ec398b008a968bec4.jpg",
+    "static/media/product-3.jpg": "/watch-application/static/media/product-3.86d471b51cb13483310c.jpg",
+    "static/media/product-4.jpg": "/watch-application/static/media/product-4.14ab27a4cd428a3e06f3.jpg",
+    "static/media/product-22.jpg": "/watch-application/static/media/product-22.3f57c7737b3fbc2d2d98.jpg",
+    "static/media/pricing-5.png": "/watch-application/static/media/pricing-5.6375c59217dcb2c7028f.png",
+    "static/media/thunb-2.jpg": "/watch-application/static/media/thunb-2.7f88e7cddb597eb998d7.jpg",
+    "index.html": "/watch-application/index.html",
+    "main.bfc1705f.css.map": "/watch-application/static/css/main.bfc1705f.css.map",
+    "main.b9013fd4.js.map": "/watch-application/static/js/main.b9013fd4.js.map",
+    "787.684e2bf3.chunk.js.map": "/watch-application/static/js/787.684e2bf3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfc1705f.css",
+    "static/js/main.b9013fd4.js"
+  ]
+}
